@@ -1,0 +1,197 @@
+
+.header-section {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 211, 211);
+}
+
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 24px;
+}
+.yt-logo {
+    height: 20px;
+}
+
+
+.middle-section {
+   
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    width: 0;
+    height: 36px;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0, 0, 0.13);
+
+}
+.search-bar::placeholder {
+    
+    font-size: 16px;
+    
+    color: gray;
+}
+.search-button {
+    height: 39px;
+    width: 66px;
+    border-color: rgb(194, 194, 194);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    margin-left: -1px;
+    margin-right: 10px;
+    transition: 0.3s;
+
+}
+
+.search-voice-but, 
+.search-button,
+.upload-icon-container,
+.apps-icon-container,
+.noti-icon-containers
+ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-button .tooltip,
+.search-voice-but .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.noti-icon-containers .tooltip {
+    position: absolute;
+    background-color: rgb(99, 99, 99);
+    color:white;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover {
+    opacity: 0.8;
+    background-color: rgb(211, 211, 211);
+
+}
+.search-button:hover .tooltip,
+.search-voice-but:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.noti-icon-containers:hover .tooltip {
+    opacity: 1;
+   
+}
+.search-button:active {
+    opacity: 0.6;
+}
+.search-icon {
+    height: 25px;
+    
+}
+.search-voice-but {
+    height: 39px;
+    width: 39px;
+    border-radius: 20px;
+    border-style: none;
+    transition: 0.3s;
+    
+}
+.search-voice-but:hover {
+    opacity: 0.8;
+    background-color: rgb(168, 168, 168);
+}
+.search-voice-but:active {
+    opacity: 0.6;
+}
+
+.voice-icon {
+    height: 25px;
+
+}
+
+
+.right-section {
+    flex-shrink: 0;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uplaod-icon {
+    width: 25px;
+}
+.yt-apps-icon {
+    width: 25px;
+    
+
+}
+.noti-icon {
+    width: 25px;
+    
+
+}
+.noti-icon-containers {
+    position: relative;
+}
+.noti-count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: rgb(209, 4, 4);
+    border-radius: 50%;
+    color: white;
+    padding-left: 5px;
+    padding-right:5px ;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    font-size: 12px;
+}
+.profile-icon {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.pro-channel:hover {
+    opacity: 0.8;
+}
+.pro-channel:active {
+    opacity: 0.6;
+}
+

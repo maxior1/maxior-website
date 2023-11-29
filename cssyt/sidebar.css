@@ -1,0 +1,118 @@
+.side-bar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 20px;
+}
+.sidebar-menu {
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-menu:hover {
+    background-color: rgb(228, 228, 228);
+}
+.sidebar-menu img {
+    height: 30px;
+    margin-bottom: 4px;
+}   
+.sidebar-menu div {
+    /*This is comment hehe you can use this */
+    font-size: 11px;
+
+}
+@media (max-width:1200px){
+    .side-bar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: white;
+        z-index: 200;
+        padding-top: 20px;
+        
+    }
+    .sidebar-menu {
+        height: 70px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        /*position: relative;*/
+        margin-left: -60px;
+        
+        
+
+    }
+    body {
+        font-family: Roboto, arial;
+        height: 3000px;
+        margin: 0;
+        padding-top: 80px;
+        background-color: rgb(249, 249, 249);
+        padding-left: 225px;
+        padding-right: 25px;
+    }
+    .sidebar-menu:hover {
+        background-color: rgb(228, 228, 228);
+    }
+    .sidebar-menu img {
+        height: 25px;
+        margin-bottom: 4px;
+        
+    }   
+    .sidebar-menu div {
+        position: absolute;
+        flex-direction: column;
+        font-size: 11px;
+        margin-left: 100px;
+        
+        white-space: nowrap;
+    
+    }
+}
+@media(min-width:1200.1px) {
+    .side-bar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 75px;
+        background-color: white;
+        z-index: 200;
+        padding-top: 20px;
+    }
+    .sidebar-menu {
+        height: 76px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .sidebar-menu:hover {
+        background-color: rgb(228, 228, 228);
+    }
+    .sidebar-menu img {
+        height: 30px;
+        margin-bottom: 4px;
+    }   
+    .sidebar-menu div {
+        /*This is comment hehe you can use this */
+        font-size: 11px;
+    
+    }
+}
+
